@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "deathquitfix",
+  "version": "${version}",
+
+  "name": "DeathQuitFix",
+  "description": "This fixes the bug where if you quit on the death screen, you don't get a +1 on the leaveGame stat and you don't actually quit the server.",
+  "authors": [
+    "Lukiiy"
+  ],
+  "contact": {
+    "sources": "https://github.com/Lukiiy/DeathQuitFix",
+    "issues": "https://github.com/Lukiiy/DeathQuitFix/issues"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/deathquitfix/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.lukiiy.deathquitfix.DeathQuitFix"
+    ]
+  },
+  "mixins": [
+    "deathquitfix.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "minecraft": "1.0.0-beta.7.3"
+  }
+}
